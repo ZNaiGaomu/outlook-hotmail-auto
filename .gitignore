@@ -1,0 +1,35 @@
+# Local working tree that contains live accounts / tokens / proxies
+微软注册/
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+.env.*
+
+# Operator secrets — never commit filled copies
+config.json
+dyn_proxy_config.json
+resi_proxy_config.json
+**/config.json
+**/dyn_proxy_config.json
+**/resi_proxy_config.json
+
+# Runtime output
+Results/**
+!**/Results/.gitkeep
+导出/
+**/导出/
+*.log
+*.pid
+*.token
+oauth_*.txt
+*_snap.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

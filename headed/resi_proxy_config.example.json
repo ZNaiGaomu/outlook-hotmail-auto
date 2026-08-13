@@ -1,0 +1,21 @@
+{
+  "name": "residential-socks-via-local-proxy",
+  "upstream": {
+    "type": "socks5",
+    "server": "YOUR_RESIDENTIAL_SOCKS_HOST",
+    "port": 1080,
+    "username": "YOUR_USERNAME",
+    "password": "YOUR_PASSWORD"
+  },
+  "via": {
+    "enabled": true,
+    "type": "http",
+    "server": "127.0.0.1",
+    "port": 7890,
+    "comment": "Optional local proxy (for example Clash) in front of the residential node"
+  },
+  "local": {
+    "host": "127.0.0.1",
+    "port": 17890
+  }
+}

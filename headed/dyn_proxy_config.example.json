@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-socks-via-local-proxy",
+  "expected_exit_ip": "",
+  "upstream": {
+    "type": "socks5",
+    "server": "YOUR_DYNAMIC_SOCKS_HOST",
+    "port": 1080,
+    "username": "",
+    "password": ""
+  },
+  "via": {
+    "enabled": true,
+    "type": "http",
+    "server": "127.0.0.1",
+    "port": 7890,
+    "comment": "Optional local proxy (for example Clash) in front of the upstream SOCKS node"
+  },
+  "local": {
+    "host": "127.0.0.1",
+    "port": 17990
+  },
+  "raw_url": "socks5://YOUR_DYNAMIC_SOCKS_HOST:1080",
+  "white_node": "",
+  "mode": "white-socks-noauth-via-7890"
+}

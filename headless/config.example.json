@@ -1,0 +1,23 @@
+{
+    "choose_browser": "patchright",
+    "email_suffix": "@outlook.com",
+    "proxy": "http://USER:PASS@residential-proxy-host:port",
+    "bot_protection_wait": 20,
+    "max_captcha_retries": 5,
+    "concurrent_flows": 1,
+    "max_tasks": 1,
+    "oauth2": {
+        "enable_oauth2": false,
+        "client_id": "",
+        "redirect_url": "https://login.microsoftonline.com/common/oauth2/nativeclient",
+        "Scopes": [
+            "offline_access",
+            "https://outlook.office.com/IMAP.AccessAsUser.All",
+            "https://outlook.office.com/SMTP.Send"
+        ]
+    },
+    "playwright": {
+        "browser_path": ""
+    },
+    "account_num": 10
+}

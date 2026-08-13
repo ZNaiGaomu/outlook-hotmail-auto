@@ -1,0 +1,41 @@
+{
+    "choose_browser": "patchright",
+    "email_suffix": "@outlook.com",
+    "use_dynamic": false,
+    "use_residential": true,
+    "dynamic_proxy": "socks5://USER:PASS@dynamic-proxy-host:port",
+    "dynamic_local_http": "http://127.0.0.1:17990",
+    "residential_proxy": "http://127.0.0.1:17890",
+    "proxy": "http://USER:PASS@residential-proxy-host:port",
+    "incognito": true,
+    "bot_protection_wait": 25,
+    "max_captcha_retries": 6,
+    "concurrent_flows": 1,
+    "max_tasks": 1,
+    "auto_rotate_dyn_sid": false,
+    "captcha_fail_rotate_threshold": 0,
+    "dyn_rotate_max_attempts": 4,
+    "cf_mail": {
+        "enabled": false,
+        "base_url": "https://your-temp-mail.example.com",
+        "domain": "mail.example.com",
+        "fallback_domain": "mail.example.com",
+        "site_password": "",
+        "admin_password": ""
+    },
+    "oauth2": {
+        "enable_oauth2": false,
+        "client_id": "",
+        "redirect_url": "https://login.microsoftonline.com/common/oauth2/nativeclient",
+        "Scopes": [
+            "offline_access",
+            "https://outlook.office.com/IMAP.AccessAsUser.All",
+            "https://outlook.office.com/POP.AccessAsUser.All",
+            "https://outlook.office.com/SMTP.Send"
+        ]
+    },
+    "playwright": {
+        "browser_path": ""
+    },
+    "account_num": 10
+}
